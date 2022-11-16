@@ -2,6 +2,15 @@
 
 A tui application launcher. The launcher stores commands, and their metadata, in a json file and then queries it based on search terms. When an application is selected to launch its command is ran using bash.
 
+## Install
+```bash
+cargo install --git https://github.com/ellabellla/float-launcher.git
+```
+
+## Uninstall
+```bash
+cargo uninstall fl
+```
 
 ## Usage
 ```bash
