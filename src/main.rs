@@ -257,10 +257,9 @@ fn search_database(database_path: &PathBuf) -> !{
         exit(1);
     }) {
         run(&command);
-    } else {
-        println!("Couldn't execute command");
-        exit(1);
-    }
+    } 
+
+    exit(0);
 }
 
 fn search_loop<'a, T: Backend>(terminal: &mut Terminal<T>, database: &'a Vec<Entry>) -> io::Result<Option<String>> {
